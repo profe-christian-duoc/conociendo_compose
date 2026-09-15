@@ -1,22 +1,20 @@
 package cl.duoc.conociendocompose.componentes
 
-import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.tooling.preview.Preview
 
 
 @Preview(showBackground = true)
 @Composable
 fun InputText() {
+    var nombre by remember {
+        mutableStateOf("")
+    }
     OutlinedTextField(
-        value = "texto",
+        value = nombre,
         onValueChange = {
-            println("Escribiendo")
-        },
-        label = {
-            Text("Otro texto")
+            nombre = it
         }
     )
 }
