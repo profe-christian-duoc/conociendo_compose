@@ -25,17 +25,15 @@ class MainActivity : ComponentActivity() {
         setContent {
             ConociendoComposeTheme() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Screen(modifier = Modifier.padding(innerPadding))
+                    Formulario(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun Screen(modifier: Modifier = Modifier) {
-    Column(modifier = modifier) {
-        Text("Primera APP")
-    }
+    Formulario(modifier = Modifier.padding(top =  16.dp))
 }
