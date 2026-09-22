@@ -1,4 +1,4 @@
-package cl.duoc.conociendocompose.registro
+package cl.duoc.conociendocompose.act01_registro
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement
